@@ -1,0 +1,1555 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-weight: normal;
+}
+
+P {
+  font-family: Gill;
+  font-size: 16px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-variant: small-caps;
+  font-size: 60px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  margin: 0 auto;
+}
+
+#margin {
+  max-width: 818px;
+  margin: 50px auto;
+}
+
+#border {
+  max-width: 980px;
+  margin: 50px auto;
+}
+
+@font-face {
+  font-family: Gill;
+  src: url(fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: Nova;
+  src: url(fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+button {
+  font-family: Gill;
+  text-transform: uppercase;
+  background-color: #79addc;
+  font-size: 15px;
+  border: none;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1060px) {
+  #margin {
+    width: 100%;
+    padding: 25px;
+  }
+}
+#white-nav {
+  min-width: 100%;
+  max-width: 1280px;
+  height: 100px;
+  padding: 0 25px;
+}
+#white-nav .navmargin {
+  margin: 0 auto;
+  max-width: 980px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: #ffffff solid 2px;
+}
+#white-nav .navmargin #logo {
+  width: 92px;
+  height: 42px;
+  background-image: url("../assets/logo/logo-white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#white-nav .navmargin .links {
+  width: 50%;
+  height: 42px;
+  align-self: center;
+  display: flex;
+}
+#white-nav .navmargin .links .nav-white {
+  color: #ffffff;
+}
+#white-nav .navmargin .links a,
+#white-nav .navmargin .links p {
+  text-decoration: none;
+  margin: auto;
+  font-family: Gill;
+  text-transform: lowercase;
+}
+#white-nav .navmargin .links p {
+  color: #79addc;
+}
+
+#black-nav {
+  min-width: 100%;
+  max-width: 1280px;
+  height: 100px;
+  padding: 0 25px;
+}
+#black-nav .navmargin {
+  margin: 0 auto;
+  max-width: 980px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: #000000 solid 2px;
+}
+#black-nav .navmargin #logo {
+  width: 92px;
+  height: 42px;
+  background-image: url("../assets/logo/logo-black.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#black-nav .navmargin .links {
+  width: 50%;
+  height: 42px;
+  align-self: center;
+  display: flex;
+}
+#black-nav .navmargin .links .nav-white {
+  color: #000000;
+}
+#black-nav .navmargin .links a,
+#black-nav .navmargin .links p {
+  text-decoration: none;
+  margin: auto;
+  font-family: Gill;
+  text-transform: lowercase;
+}
+#black-nav .navmargin .links p {
+  color: #79addc;
+}
+
+@media all and (max-width: 1065px) {
+  #black-nav {
+    margin-bottom: 50px;
+  }
+}
+.hero {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero .intro {
+  padding: 70px;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #ffffff;
+}
+.hero .intro h1 {
+  color: #ffffff;
+  margin: 0 auto;
+}
+.hero .intro p {
+  font-style: italic;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero .intro button {
+  height: 40px;
+  width: 133px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 40px;
+  width: 122px;
+  margin: 0 auto;
+}
+
+.promo-tours {
+  max-width: 1280px;
+  min-height: 304px;
+  margin: -100px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.promo-tours .promo {
+  height: 304px;
+  width: 236px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.promo-tours #israel {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.promo-tours #usa {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.promo-tours #australia {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.promo-tours h2,
+.promo-tours h3 {
+  color: #ffffff;
+}
+.promo-tours h2 {
+  margin: 47px auto 0px auto;
+}
+.promo-tours h3 {
+  margin: 0 auto;
+}
+.promo-tours button {
+  height: 40px;
+  width: 133px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 56px auto 0px auto;
+}
+
+@media all and (max-width: 1200px) {
+  .promo-tours {
+    margin-top: -125px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .promo-tours .promo {
+    margin-bottom: 10px;
+  }
+}
+.booking-form h2 {
+  margin-top: 65px;
+}
+.booking-form form {
+  min-width: 818px;
+  font-family: Gill;
+  text-transform: capitalize;
+  color: #000000;
+}
+.booking-form form div {
+  display: flex;
+  justify-content: flex-end;
+  margin: 22px 0px 10px 0px;
+}
+.booking-form form input,
+.booking-form form select {
+  padding: 20px;
+  height: 58px;
+  font-family: Gill;
+  text-transform: lowercase;
+  font-size: 18px;
+  border: 1px solid #79addc;
+}
+.booking-form form #name,
+.booking-form form #country {
+  width: 40%;
+  margin-right: 21px;
+}
+.booking-form form #email,
+.booking-form form #hotel {
+  width: 60%;
+}
+.booking-form form .date {
+  width: 85%;
+}
+.booking-form form .check-date {
+  height: 21px;
+  width: 15%;
+  align-self: center;
+}
+.booking-form form input[type=date]::-webkit-calendar-picker-indicator {
+  background: url(../assets/calendar.svg) no-repeat;
+  width: 19px;
+  height: 19px;
+}
+.booking-form form .number-selection {
+  justify-content: space-between;
+}
+.booking-form form .number-selection div {
+  justify-content: space-between;
+  width: 25%;
+  margin: 0;
+}
+.booking-form form .number-selection div .number-needed {
+  width: 50%;
+  align-self: center;
+}
+.booking-form form .select {
+  width: 103px;
+  margin-left: auto;
+  /* needed */
+  -webkit-appearance: none;
+  appearance: none;
+  /* SVG background image for drop-down arrow */
+  background-image: url("../assets/down-arrow.svg");
+  background-size: 0.6em;
+  background-position: calc(100% - 1.3em) center;
+  background-repeat: no-repeat;
+}
+.booking-form form #message {
+  width: 100%;
+  height: 192px;
+  resize: none;
+  padding-bottom: 165px;
+}
+.booking-form input::placeholder {
+  color: #ccc;
+  font-family: Gill;
+  font-weight: lighter;
+}
+.booking-form input[type=date],
+.booking-form select[type=number] {
+  color: #ccc;
+}
+.booking-form button {
+  height: 60px;
+  width: 100%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 37px auto 50px auto;
+}
+
+@media all and (max-width: 1200px) {
+  .booking-form {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .booking-form h1 {
+    text-align: center;
+  }
+  .booking-form form {
+    min-width: 100%;
+  }
+}
+.about {
+  max-width: 980px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+}
+.about .about-top-section {
+  margin-bottom: 100px;
+}
+.about .about-top-section h1 {
+  width: 150px;
+  border-bottom: #000000 solid 2px;
+}
+.about .about-top-section p {
+  margin: 0 auto;
+}
+.about .about-bottom-section h4 {
+  width: 200px;
+  border-bottom: #000000 solid 2px;
+}
+.about .about-bottom-section p {
+  font-style: italic;
+  margin: 0 auto;
+}
+.about .about-bottom-section .client {
+  max-width: 772px;
+  min-height: 150px;
+  display: flex;
+}
+.about .about-bottom-section .client .client-image {
+  height: 150px;
+  width: 260px;
+}
+.about .about-bottom-section .client .client-image.client1 {
+  background-image: url("../assets/about-client-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about .about-bottom-section .client .client-image.client2 {
+  background-image: url("../assets/about-client-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about .about-bottom-section .client:first-of-type {
+  margin-bottom: 38px;
+}
+.about .about-bottom-section .client-quote {
+  position: relative;
+  min-height: 50px;
+  width: 100%;
+  padding-left: 25px;
+}
+.about .about-bottom-section .client-quote p {
+  width: 385px;
+}
+.about .about-bottom-section .client-quote p:last-of-type {
+  margin-bottom: 25px;
+}
+.about .about-bottom-section .client-quote .client-quote-name {
+  width: 100%;
+  text-align: right;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-variant: small-caps;
+  color: #79addc;
+}
+
+#border {
+  max-width: 980px;
+}
+#border #tourban {
+  height: 200px;
+  margin: 50px auto 0 auto;
+  display: flex;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tours-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+#border #tourban h1 {
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: normal;
+}
+#border .tours {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#border .tours .promo {
+  height: 304px;
+  width: 236px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+#border .tours .promo:nth-child(-n+6) {
+  margin-bottom: 55px;
+}
+#border .tours h2,
+#border .tours h3 {
+  color: #ffffff;
+  margin: 0 auto;
+}
+#border .tours h2 {
+  margin: 47px auto 0px auto;
+}
+#border .tours button {
+  height: 40px;
+  width: 133px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 56px auto 0px auto;
+}
+#border .tours #israel {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#border .tours #usa {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#border .tours #australia {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#border .tours #kiwi {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-04.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#border .tours #france {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-05.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#border .tours #egypt {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-06.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#border .tours #japan {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-07.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#border .tours #canada {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-08.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#border .tours #uae {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-09.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media all and (max-width: 1065px) {
+  #border {
+    max-width: 100%;
+    margin: 0 30px;
+  }
+  #border #tourban {
+    max-width: 980px;
+  }
+  #border .tours {
+    flex-direction: column;
+    align-items: center;
+  }
+  #border .tours .promo:nth-child(-n+8) {
+    margin-bottom: 55px;
+  }
+}
+.israel #banner {
+  position: relative;
+  max-width: 100%;
+  height: 413px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.israel #banner h2,
+.israel #banner h3 {
+  color: #ffffff;
+  margin: 30px;
+}
+.israel #banner h2 {
+  margin-bottom: 300px;
+}
+.israel #banner h3 {
+  align-items: right;
+  text-align: right;
+  color: #ffffff;
+}
+.israel #subbanner {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.israel #subbanner div {
+  height: 347px;
+  width: 298px;
+}
+.israel #subbanner div.ph1 {
+  background-image: url("../assets/tour/tour-israel/israel-tour-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.israel #subbanner div.ph2 {
+  background-image: url("../assets/tour/tour-israel/israel-tour-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.israel #subbanner div.ph3 {
+  background-image: url("../assets/tour/tour-israel/israel-tour-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.israel #itinerary {
+  width: 100%;
+}
+.israel #itinerary .day {
+  margin-bottom: 80px;
+}
+.israel #itinerary .day h2 {
+  width: 171px;
+  border-bottom: #000000 solid 2px;
+  letter-spacing: 0.1em;
+  margin-bottom: 35px;
+  margin-right: 30px;
+}
+.israel button {
+  height: 40px;
+  width: 188px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0 auto 50px auto;
+}
+
+@media all and (max-width: 1065px) {
+  .israel #mobile {
+    display: flex;
+  }
+  .israel #mobile #subbanner {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+  }
+  .israel #mobile #subbanner div:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+  .israel #mobile #itinerary {
+    margin: 50px auto;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .israel #mobile #itinerary div {
+    min-height: 347px;
+    margin-bottom: 0;
+  }
+  .israel #mobile #itinerary .day:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+}
+.usa #banner {
+  position: relative;
+  max-width: 100%;
+  height: 413px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.usa #banner h2,
+.usa #banner h3 {
+  color: #ffffff;
+  margin: 30px;
+}
+.usa #banner h2 {
+  margin-bottom: 300px;
+}
+.usa #banner h3 {
+  align-items: right;
+  text-align: right;
+  color: #ffffff;
+}
+.usa #subbanner {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.usa #subbanner div {
+  height: 347px;
+  width: 298px;
+}
+.usa #subbanner div.ph1 {
+  background-image: url("../assets/tour/tour-usa/usa-tour-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.usa #subbanner div.ph2 {
+  background-image: url("../assets/tour/tour-usa/usa-tour-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.usa #subbanner div.ph3 {
+  background-image: url("../assets/tour/tour-usa/usa-tour-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.usa #itinerary {
+  width: 100%;
+}
+.usa #itinerary .day {
+  margin-bottom: 80px;
+}
+.usa #itinerary .day h2 {
+  width: 171px;
+  border-bottom: #000000 solid 2px;
+  letter-spacing: 0.1em;
+  margin-bottom: 35px;
+  margin-right: 30px;
+}
+.usa button {
+  height: 40px;
+  width: 188px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0 auto 50px auto;
+}
+
+@media all and (max-width: 1065px) {
+  .usa #mobile {
+    display: flex;
+  }
+  .usa #mobile #subbanner {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+  }
+  .usa #mobile #subbanner div:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+  .usa #mobile #itinerary {
+    margin: 50px auto;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .usa #mobile #itinerary div {
+    min-height: 347px;
+    margin-bottom: 0;
+  }
+  .usa #mobile #itinerary .day:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+}
+.australia #banner {
+  position: relative;
+  max-width: 100%;
+  height: 413px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.australia #banner h2,
+.australia #banner h3 {
+  color: #ffffff;
+  margin: 30px;
+}
+.australia #banner h2 {
+  margin-bottom: 300px;
+}
+.australia #banner h3 {
+  align-items: right;
+  text-align: right;
+  color: #ffffff;
+}
+.australia #subbanner {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.australia #subbanner div {
+  height: 347px;
+  width: 298px;
+}
+.australia #subbanner div.ph1 {
+  background-image: url("../assets/tour/tour-aus/aus-tour-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.australia #subbanner div.ph2 {
+  background-image: url("../assets/tour/tour-aus/aus-tour-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.australia #subbanner div.ph3 {
+  background-image: url("../assets/tour/tour-aus/aus-tour-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.australia #itinerary {
+  width: 100%;
+}
+.australia #itinerary .day {
+  margin-bottom: 80px;
+}
+.australia #itinerary .day h2 {
+  width: 171px;
+  border-bottom: #000000 solid 2px;
+  letter-spacing: 0.1em;
+  margin-bottom: 35px;
+  margin-right: 30px;
+}
+.australia button {
+  height: 40px;
+  width: 188px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0 auto 50px auto;
+}
+
+@media all and (max-width: 1065px) {
+  .australia #mobile {
+    display: flex;
+  }
+  .australia #mobile #subbanner {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+  }
+  .australia #mobile #subbanner div:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+  .australia #mobile #itinerary {
+    margin: 50px auto;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .australia #mobile #itinerary div {
+    min-height: 347px;
+    margin-bottom: 0;
+  }
+  .australia #mobile #itinerary .day:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+}
+.kiwi #banner {
+  position: relative;
+  max-width: 100%;
+  height: 413px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-04.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.kiwi #banner h2,
+.kiwi #banner h3 {
+  color: #ffffff;
+  margin: 30px;
+}
+.kiwi #banner h2 {
+  margin-bottom: 300px;
+}
+.kiwi #banner h3 {
+  align-items: right;
+  text-align: right;
+  color: #ffffff;
+}
+.kiwi #subbanner {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.kiwi #subbanner div {
+  height: 347px;
+  width: 298px;
+}
+.kiwi #subbanner div.ph1 {
+  background-image: url("../assets/tour/tour-nz/nz-tour-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.kiwi #subbanner div.ph2 {
+  background-image: url("../assets/tour/tour-nz/nz-tour-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.kiwi #subbanner div.ph3 {
+  background-image: url("../assets/tour/tour-nz/nz-tour-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.kiwi #itinerary {
+  width: 100%;
+}
+.kiwi #itinerary .day {
+  margin-bottom: 80px;
+}
+.kiwi #itinerary .day h2 {
+  width: 171px;
+  border-bottom: #000000 solid 2px;
+  letter-spacing: 0.1em;
+  margin-bottom: 35px;
+  margin-right: 30px;
+}
+.kiwi button {
+  height: 40px;
+  width: 188px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0 auto 50px auto;
+}
+
+@media all and (max-width: 1065px) {
+  .kiwi #mobile {
+    display: flex;
+  }
+  .kiwi #mobile #subbanner {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+  }
+  .kiwi #mobile #subbanner div:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+  .kiwi #mobile #itinerary {
+    margin: 50px auto;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .kiwi #mobile #itinerary div {
+    min-height: 347px;
+    margin-bottom: 0;
+  }
+  .kiwi #mobile #itinerary .day:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+}
+.france #banner {
+  position: relative;
+  max-width: 100%;
+  height: 413px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-05.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.france #banner h2,
+.france #banner h3 {
+  color: #ffffff;
+  margin: 30px;
+}
+.france #banner h2 {
+  margin-bottom: 300px;
+}
+.france #banner h3 {
+  align-items: right;
+  text-align: right;
+  color: #ffffff;
+}
+.france #subbanner {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.france #subbanner div {
+  height: 347px;
+  width: 298px;
+}
+.france #subbanner div.ph1 {
+  background-image: url("../assets/tour/tour-france/france-tour-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.france #subbanner div.ph2 {
+  background-image: url("../assets/tour/tour-france/france-tour-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.france #subbanner div.ph3 {
+  background-image: url("../assets/tour/tour-france/france-tour-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.france #itinerary {
+  width: 100%;
+}
+.france #itinerary .day {
+  margin-bottom: 80px;
+}
+.france #itinerary .day h2 {
+  width: 171px;
+  border-bottom: #000000 solid 2px;
+  letter-spacing: 0.1em;
+  margin-bottom: 35px;
+  margin-right: 30px;
+}
+.france button {
+  height: 40px;
+  width: 188px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0 auto 50px auto;
+}
+
+@media all and (max-width: 1065px) {
+  .france #mobile {
+    display: flex;
+  }
+  .france #mobile #subbanner {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+  }
+  .france #mobile #subbanner div:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+  .france #mobile #itinerary {
+    margin: 50px auto;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .france #mobile #itinerary div {
+    min-height: 347px;
+    margin-bottom: 0;
+  }
+  .france #mobile #itinerary .day:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+}
+.egypt #banner {
+  position: relative;
+  max-width: 100%;
+  height: 413px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-06.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.egypt #banner h2,
+.egypt #banner h3 {
+  color: #ffffff;
+  margin: 30px;
+}
+.egypt #banner h2 {
+  margin-bottom: 300px;
+}
+.egypt #banner h3 {
+  align-items: right;
+  text-align: right;
+  color: #ffffff;
+}
+.egypt #subbanner {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.egypt #subbanner div {
+  height: 347px;
+  width: 298px;
+}
+.egypt #subbanner div.ph1 {
+  background-image: url("../assets/tour/tour-egypt/egypt-tour-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.egypt #subbanner div.ph2 {
+  background-image: url("../assets/tour/tour-egypt/egypt-tour-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.egypt #subbanner div.ph3 {
+  background-image: url("../assets/tour/tour-egypt/egypt-tour-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.egypt #itinerary {
+  width: 100%;
+}
+.egypt #itinerary .day {
+  margin-bottom: 80px;
+}
+.egypt #itinerary .day h2 {
+  width: 171px;
+  border-bottom: #000000 solid 2px;
+  letter-spacing: 0.1em;
+  margin-bottom: 35px;
+  margin-right: 30px;
+}
+.egypt button {
+  height: 40px;
+  width: 188px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0 auto 50px auto;
+}
+
+@media all and (max-width: 1065px) {
+  .egypt #mobile {
+    display: flex;
+  }
+  .egypt #mobile #subbanner {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+  }
+  .egypt #mobile #subbanner div:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+  .egypt #mobile #itinerary {
+    margin: 50px auto;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .egypt #mobile #itinerary div {
+    min-height: 347px;
+    margin-bottom: 0;
+  }
+  .egypt #mobile #itinerary .day:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+}
+.japan #banner {
+  position: relative;
+  max-width: 100%;
+  height: 413px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-07.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.japan #banner h2,
+.japan #banner h3 {
+  color: #ffffff;
+  margin: 30px;
+}
+.japan #banner h2 {
+  margin-bottom: 300px;
+}
+.japan #banner h3 {
+  align-items: right;
+  text-align: right;
+  color: #ffffff;
+}
+.japan #subbanner {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.japan #subbanner div {
+  height: 347px;
+  width: 298px;
+}
+.japan #subbanner div.ph1 {
+  background-image: url("../assets/tour/tour-japan/japan-tour-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.japan #subbanner div.ph2 {
+  background-image: url("../assets/tour/tour-japan/japan-tour-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.japan #subbanner div.ph3 {
+  background-image: url("../assets/tour/tour-japan/japan-tour-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.japan #itinerary {
+  width: 100%;
+}
+.japan #itinerary .day {
+  margin-bottom: 80px;
+}
+.japan #itinerary .day h2 {
+  width: 171px;
+  border-bottom: #000000 solid 2px;
+  letter-spacing: 0.1em;
+  margin-bottom: 35px;
+  margin-right: 30px;
+}
+.japan button {
+  height: 40px;
+  width: 188px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0 auto 50px auto;
+}
+
+@media all and (max-width: 1065px) {
+  .japan #mobile {
+    display: flex;
+  }
+  .japan #mobile #subbanner {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+  }
+  .japan #mobile #subbanner div:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+  .japan #mobile #itinerary {
+    margin: 50px auto;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .japan #mobile #itinerary div {
+    min-height: 347px;
+    margin-bottom: 0;
+  }
+  .japan #mobile #itinerary .day:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+}
+.canada #banner {
+  position: relative;
+  max-width: 100%;
+  height: 413px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-08.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.canada #banner h2,
+.canada #banner h3 {
+  color: #ffffff;
+  margin: 30px;
+}
+.canada #banner h2 {
+  margin-bottom: 300px;
+}
+.canada #banner h3 {
+  align-items: right;
+  text-align: right;
+  color: #ffffff;
+}
+.canada #subbanner {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.canada #subbanner div {
+  height: 347px;
+  width: 298px;
+}
+.canada #subbanner div.ph1 {
+  background-image: url("../assets/tour/tour-canada/canada-tour-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.canada #subbanner div.ph2 {
+  background-image: url("../assets/tour/tour-canada/canada-tour-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.canada #subbanner div.ph3 {
+  background-image: url("../assets/tour/tour-canada/canada-tour-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.canada #itinerary {
+  width: 100%;
+}
+.canada #itinerary .day {
+  margin-bottom: 80px;
+}
+.canada #itinerary .day h2 {
+  width: 171px;
+  border-bottom: #000000 solid 2px;
+  letter-spacing: 0.1em;
+  margin-bottom: 35px;
+  margin-right: 30px;
+}
+.canada button {
+  height: 40px;
+  width: 188px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0 auto 50px auto;
+}
+
+@media all and (max-width: 1065px) {
+  .canada #mobile {
+    display: flex;
+  }
+  .canada #mobile #subbanner {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+  }
+  .canada #mobile #subbanner div:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+  .canada #mobile #itinerary {
+    margin: 50px auto;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .canada #mobile #itinerary div {
+    min-height: 347px;
+    margin-bottom: 0;
+  }
+  .canada #mobile #itinerary .day:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+}
+.uae #banner {
+  position: relative;
+  max-width: 100%;
+  height: 413px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/tour/tour-09.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.uae #banner h2,
+.uae #banner h3 {
+  color: #ffffff;
+  margin: 30px;
+}
+.uae #banner h2 {
+  margin-bottom: 300px;
+}
+.uae #banner h3 {
+  align-items: right;
+  text-align: right;
+  color: #ffffff;
+}
+.uae #subbanner {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.uae #subbanner div {
+  height: 347px;
+  width: 298px;
+}
+.uae #subbanner div.ph1 {
+  background-image: url("../assets/tour/tour-uae/uae-tour-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.uae #subbanner div.ph2 {
+  background-image: url("../assets/tour/tour-uae/uae-tour-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.uae #subbanner div.ph3 {
+  background-image: url("../assets/tour/tour-uae/uae-tour-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.uae #itinerary {
+  width: 100%;
+}
+.uae #itinerary .day {
+  margin-bottom: 80px;
+}
+.uae #itinerary .day h2 {
+  width: 171px;
+  border-bottom: #000000 solid 2px;
+  letter-spacing: 0.1em;
+  margin-bottom: 35px;
+  margin-right: 30px;
+}
+.uae button {
+  height: 40px;
+  width: 188px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0 auto 50px auto;
+}
+
+@media all and (max-width: 1065px) {
+  .uae #mobile {
+    display: flex;
+  }
+  .uae #mobile #subbanner {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+  }
+  .uae #mobile #subbanner div:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+  .uae #mobile #itinerary {
+    margin: 50px auto;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .uae #mobile #itinerary div {
+    min-height: 347px;
+    margin-bottom: 0;
+  }
+  .uae #mobile #itinerary .day:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+}
+footer {
+  background-color: #79addc;
+  min-width: 100%;
+  max-width: 1280px;
+  height: 100px;
+  padding: 0 25px;
+}
+footer .footmargin {
+  margin: 0 auto;
+  width: 980px;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+footer .logo {
+  width: 92px;
+  height: 42px;
+}
+footer #white-logo {
+  background-image: url("../assets/logo/logo-white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+footer p {
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: normal;
+  align-self: center;
+}
+footer .socials {
+  height: 23px;
+  width: 114px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-self: center;
+}
+footer .socials div {
+  height: 23px;
+  width: 23px;
+}
+footer .socials #fb {
+  background-image: url("../assets/logo/facebookWHT.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+footer .socials #insta {
+  background-image: url("../assets/logo/instagramWHT.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+footer .socials #tw {
+  background-image: url("../assets/logo/twitterWHT.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media all and (max-width: 1200px) {
+  footer {
+    min-width: 100%;
+  }
+  footer .footmargin {
+    width: 95%;
+  }
+}
